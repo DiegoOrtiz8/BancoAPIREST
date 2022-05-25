@@ -3183,3 +3183,7 @@ Caused by: org.postgresql.util.PSQLException: ERROR: column "none" does not exis
 2022-05-24 22:37:41,074 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8005-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-05-24 22:37:41,076 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8005-exec-2] Initializing Servlet 'dispatcherServlet'
 2022-05-24 22:37:41,078 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8005-exec-2] Completed initialization in 1 ms
+2022-05-24 22:43:18,291 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-24 22:43:18,292 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-24 22:43:18,311 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-24 22:43:18,325 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
