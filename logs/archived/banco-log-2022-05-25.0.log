@@ -1,0 +1,126 @@
+2022-05-25 00:02:06,032 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 00:02:06,036 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-25 00:02:06,066 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-25 00:02:06,078 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-05-25 00:02:26,139 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BancoApirestApplication using Java 18 on LAPTOP-5H0JNLOJ with PID 23188 (C:\Users\106625781\IdeaProjects\BancoAPIREST\target\classes started by 106625781 in C:\Users\106625781\IdeaProjects\BancoAPIREST)
+2022-05-25 00:02:26,139 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-25 00:02:26,147 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-25 00:02:26,297 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-25 00:02:26,298 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-25 00:02:28,008 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-25 00:02:28,138 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interfaces.
+2022-05-25 00:02:29,337 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8005 (http)
+2022-05-25 00:02:29,357 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-25 00:02:29,357 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-25 00:02:29,357 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-25 00:02:29,619 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-25 00:02:29,619 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3321 ms
+2022-05-25 00:02:29,918 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-25 00:02:30,017 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-25 00:02:30,267 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-25 00:02:30,418 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-25 00:02:30,767 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-25 00:02:30,807 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-05-25 00:02:32,236 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-05-25 00:02:32,237 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "tarjetas" does not exist, skipping
+2022-05-25 00:02:32,286 INFO org.hibernate.tool.schema.internal.exec.AbstractScriptSourceInput [restartedMain] HHH000476: Executing import script 'file:/C:/Users/106625781/IdeaProjects/BancoAPIREST/target/classes/import.sql'
+2022-05-25 00:02:32,349 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-25 00:02:32,371 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 00:02:33,257 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-25 00:02:34,002 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-25 00:02:34,036 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8005"]
+2022-05-25 00:02:34,083 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8005 (http) with context path '/api/v1/api-tarjetas'
+2022-05-25 00:02:34,108 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BancoApirestApplication in 8.807 seconds (JVM running for 11.079)
+2022-05-25 00:02:36,641 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8005-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 00:02:36,642 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8005-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-25 00:02:36,646 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8005-exec-1] Completed initialization in 3 ms
+2022-05-25 00:02:45,278 INFO com.ibm.academia.apirest.controllers.TarjetaController [http-nio-8005-exec-3] No fue posible recomendar tarjetas
+2022-05-25 00:03:03,281 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-4] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:03:13,138 INFO com.ibm.academia.apirest.controllers.TarjetaController [http-nio-8005-exec-7] No fue posible recomendar tarjetas
+2022-05-25 00:03:18,561 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-8] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:03:30,311 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-10] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:03:37,371 INFO com.ibm.academia.apirest.controllers.TarjetaController [http-nio-8005-exec-1] No fue posible recomendar tarjetas
+2022-05-25 00:03:43,729 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-3] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:03:55,224 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-5] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:05:45,159 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 00:05:45,166 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-25 00:05:45,207 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-25 00:05:45,216 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-05-25 00:06:01,438 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-25 00:06:01,438 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BancoApirestApplication using Java 18 on LAPTOP-5H0JNLOJ with PID 9336 (C:\Users\106625781\IdeaProjects\BancoAPIREST\target\classes started by 106625781 in C:\Users\106625781\IdeaProjects\BancoAPIREST)
+2022-05-25 00:06:01,442 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-25 00:06:01,544 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-25 00:06:01,545 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-25 00:06:03,211 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-25 00:06:03,339 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interfaces.
+2022-05-25 00:06:04,465 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8005 (http)
+2022-05-25 00:06:04,480 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-25 00:06:04,482 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-25 00:06:04,483 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-25 00:06:04,703 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-25 00:06:04,704 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3157 ms
+2022-05-25 00:06:04,994 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-25 00:06:05,065 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-25 00:06:05,285 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-25 00:06:05,404 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-25 00:06:05,684 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-25 00:06:05,715 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-05-25 00:06:06,655 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-05-25 00:06:06,663 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "tarjetas" does not exist, skipping
+2022-05-25 00:06:06,715 INFO org.hibernate.tool.schema.internal.exec.AbstractScriptSourceInput [restartedMain] HHH000476: Executing import script 'file:/C:/Users/106625781/IdeaProjects/BancoAPIREST/target/classes/import.sql'
+2022-05-25 00:06:06,795 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-25 00:06:06,816 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 00:06:07,649 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-25 00:06:08,241 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-25 00:06:08,277 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8005"]
+2022-05-25 00:06:08,320 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8005 (http) with context path '/api/v1/api-tarjetas'
+2022-05-25 00:06:08,349 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BancoApirestApplication in 7.654 seconds (JVM running for 9.489)
+2022-05-25 00:06:13,585 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8005-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 00:06:13,587 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8005-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-25 00:06:13,592 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8005-exec-1] Completed initialization in 4 ms
+2022-05-25 00:06:13,785 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-1] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:06:20,576 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-4] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:06:23,626 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-6] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Pasion no puede ser vacio]
+2022-05-25 00:06:32,596 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-8] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:06:48,978 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-2] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:07:24,093 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 00:07:24,097 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-25 00:07:24,129 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-25 00:07:24,141 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-05-25 00:07:41,455 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BancoApirestApplication using Java 18 on LAPTOP-5H0JNLOJ with PID 22152 (C:\Users\106625781\IdeaProjects\BancoAPIREST\target\classes started by 106625781 in C:\Users\106625781\IdeaProjects\BancoAPIREST)
+2022-05-25 00:07:41,455 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-25 00:07:41,459 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-25 00:07:41,530 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-25 00:07:41,530 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-25 00:07:43,119 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-25 00:07:43,239 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interfaces.
+2022-05-25 00:07:44,331 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8005 (http)
+2022-05-25 00:07:44,349 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8005"]
+2022-05-25 00:07:44,350 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-25 00:07:44,351 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-25 00:07:44,544 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-25 00:07:44,544 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3013 ms
+2022-05-25 00:07:44,789 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-25 00:07:44,916 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-25 00:07:45,149 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-25 00:07:45,299 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-25 00:07:45,774 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-25 00:07:45,809 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-05-25 00:07:47,051 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-05-25 00:07:47,056 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "tarjetas" does not exist, skipping
+2022-05-25 00:07:47,110 INFO org.hibernate.tool.schema.internal.exec.AbstractScriptSourceInput [restartedMain] HHH000476: Executing import script 'file:/C:/Users/106625781/IdeaProjects/BancoAPIREST/target/classes/import.sql'
+2022-05-25 00:07:47,199 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-25 00:07:47,222 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 00:07:48,218 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-25 00:07:48,816 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-25 00:07:48,837 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8005"]
+2022-05-25 00:07:48,871 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8005 (http) with context path '/api/v1/api-tarjetas'
+2022-05-25 00:07:48,888 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BancoApirestApplication in 8.048 seconds (JVM running for 10.338)
+2022-05-25 00:07:56,278 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8005-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 00:07:56,280 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8005-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-25 00:07:56,284 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8005-exec-2] Completed initialization in 3 ms
+2022-05-25 00:07:56,625 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8005-exec-2] Resolved [com.ibm.academia.apirest.exceptions.BadRequestException: Ingrese una pasion valida]
+2022-05-25 00:08:15,956 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-25 00:08:15,958 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-25 00:08:15,997 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-25 00:08:16,010 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

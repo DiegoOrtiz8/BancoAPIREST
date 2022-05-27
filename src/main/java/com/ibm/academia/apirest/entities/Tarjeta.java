@@ -50,6 +50,8 @@ public class Tarjeta implements Serializable {
 
     @Column(name = "sueldo_maximo")
     private Double sueldoMaximo;
-    private TipoTarjeta tipoTarjeta;
+
+    @Transient
+    private Integer puerto;
 
 }

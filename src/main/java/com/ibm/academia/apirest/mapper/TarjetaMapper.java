@@ -10,6 +10,7 @@ public class TarjetaMapper {
         TarjetaDTO tarjetaDTO = new TarjetaDTO();
         tarjetaDTO.setId(tarjeta.getId());
         tarjetaDTO.setNombre(tarjeta.getNombre());
+        tarjetaDTO.setPuerto(tarjeta.getPuerto());
 
         return tarjetaDTO;
     }

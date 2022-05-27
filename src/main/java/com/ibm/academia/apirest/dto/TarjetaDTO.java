@@ -12,4 +12,5 @@ import lombok.Setter;
 public class TarjetaDTO {
     private Integer id;
     private String nombre;
+    private Integer puerto;
 }

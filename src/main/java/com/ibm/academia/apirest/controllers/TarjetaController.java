@@ -9,6 +9,9 @@ import com.ibm.academia.apirest.services.TarjetaDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -28,13 +31,28 @@ public class TarjetaController {
     @Autowired
     private TarjetaDAO tarjetaDAO;
 
+    @Autowired
+    private Environment environment;
+
+    @Value("${server.port}")
+    private String port;
+
     /**
      * Endpoint para obtener todas las tarjetas registradas en la BD
      * @return Lista de tarjetas que se encuentran en la bd
      */
     @GetMapping("/listar")
     public ResponseEntity<?> obtenerTarjetas() {
-        List<Tarjeta> tarjetas = tarjetaDAO.verTodasTarjetas();
+        List<Tarjeta> tarjetas = tarjetaDAO.verTodasTarjetas()
+                .stream()
+                .map(tarjeta -> {
+                    tarjeta.setPuerto(Integer.parseInt(environment.getProperty("local.server.port")));
+
+                    return tarjeta;
+                }).collect(Collectors.toList());
+
+
+
         if(tarjetas.isEmpty())
             throw new BadRequestException("No existen tarjetas cargadas en la BD");
 
@@ -57,7 +75,13 @@ public class TarjetaController {
 
         Map<String, Object> respuesta = new HashMap<String, Object>();
         try {
+
             tarjetaDTOS = (List<TarjetaDTO>) tarjetaDAO.obtenerRecomendacionTarjetas(pasion, edad, sueldo);
+            tarjetaDTOS.stream().map(tarjeta -> {
+                tarjeta.setPuerto(Integer.parseInt(environment.getProperty("local.server.port")));
+                return tarjeta;
+            }).collect(Collectors.toList());
+
 
             return new ResponseEntity<List<TarjetaDTO>>(tarjetaDTOS, HttpStatus.OK);
         } catch (NotFoundException e) {
