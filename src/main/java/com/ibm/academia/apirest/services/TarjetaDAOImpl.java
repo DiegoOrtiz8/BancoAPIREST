@@ -34,6 +34,10 @@ public class TarjetaDAOImpl extends GenericoDAOImpl<Tarjeta, TarjetaRepository> 
 
         if(pasion.isBlank())
             throw new BadRequestException("Pasion no puede ser vacio");
+        if (edad == null)
+            throw new BadRequestException("Edad no puede ser vacio");
+        if (sueldo == null)
+            throw new BadRequestException("Sueldo no puede ser vacio");
         if(edad < 18 || edad > 75)
             throw new BadRequestException("El rango de Edad permitido es de 18-75 años");
         if(sueldo < 7000.0)
