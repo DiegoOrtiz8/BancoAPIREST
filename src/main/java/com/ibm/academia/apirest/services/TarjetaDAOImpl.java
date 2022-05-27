@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class TarjetaDAOImpl extends GenericoDAOImpl<Tarjeta, TarjetaRepository> implements TarjetaDAO{
+public class TarjetaDAOImpl extends GenericoDAOImpl<Tarjeta, TarjetaRepository> implements TarjetaDAO {
 
     @Autowired
     public TarjetaDAOImpl(TarjetaRepository repository) {
@@ -31,20 +31,25 @@ public class TarjetaDAOImpl extends GenericoDAOImpl<Tarjeta, TarjetaRepository> 
     @Transactional(readOnly = true)
     public Iterable<TarjetaDTO> obtenerRecomendacionTarjetas(String pasion, Integer edad, Double sueldo) {
 
-        if(pasion.isBlank())
+        if (pasion.isBlank())
             throw new BadRequestException("Pasion no puede ser vacio");
-        if(edad < 18 || edad > 75)
+        if (edad == null)
+            throw new BadRequestException("Edad no puede ser vacio");
+        if (sueldo == null)
+            throw new BadRequestException("Sueldo no puede ser vacio");
+        if (edad < 18 || edad > 75)
             throw new BadRequestException("El rango de Edad permitido es de 18-75 años");
-        if(sueldo < 7000.0)
+        if (sueldo < 7000.0)
             throw new BadRequestException("El sueldo minimo es de 7,000.0");
-        if(!(pasion.contains("shopping") || pasion.contains("mystyle") || pasion.contains("mybusiness")
+        if (!(pasion.contains("shopping") || pasion.contains("mystyle") || pasion.contains("mybusiness")
                 || pasion.contains("travels") || pasion.contains("sports") || pasion.contains("help")))
             throw new BadRequestException("Ingrese una pasion valida");
 
         List<TarjetaDTO> tarjetaDTOS = null;
-        List<Tarjeta> tarjetas = (List<Tarjeta>) repository.obtenerRecomendacionTarjetas(pasion.toLowerCase(), edad, sueldo);
+        List<Tarjeta> tarjetas = (List<Tarjeta>) repository.obtenerRecomendacionTarjetas(pasion.toLowerCase(), edad,
+                sueldo);
 
-        if(tarjetas.isEmpty())
+        if (tarjetas.isEmpty())
             throw new NotFoundException("No fue posible recomendar tarjetas");
 
         tarjetaDTOS = tarjetas.stream().map(TarjetaMapper::mapTarjeta).collect(Collectors.toList());

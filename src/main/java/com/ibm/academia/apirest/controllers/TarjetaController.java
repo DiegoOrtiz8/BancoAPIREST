@@ -50,8 +50,8 @@ public class TarjetaController {
      */
     @PostMapping("/obtener-recomendacion")
     public ResponseEntity<?> obtenerRecomendacionTarjetas(@RequestParam(name = "pasion") String pasion,
-                                                          @RequestParam(name = "edad") Integer edad,
-                                                          @RequestParam(name = "sueldo") Double sueldo) {
+                                                          @RequestParam(required=false, name = "edad") Integer edad,
+                                                          @RequestParam(required=false, name = "sueldo") Double sueldo) {
 
         List<TarjetaDTO> tarjetaDTOS = null;
 
