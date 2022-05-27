@@ -34,6 +34,8 @@ public class TarjetaController {
     @Autowired
     private Environment environment;
 
+    //@Value("${server.port}")
+    //private Integer puerto;
 
     /**
      * Endpoint para obtener todas las tarjetas registradas en la BD
@@ -45,7 +47,7 @@ public class TarjetaController {
                 .stream()
                 .map(tarjeta -> {
                     tarjeta.setPuerto(Integer.parseInt(environment.getProperty("local.server.port")));
-
+                    //tarjeta.setPuerto(puerto);
                     return tarjeta;
                 }).collect(Collectors.toList());
 
@@ -77,6 +79,7 @@ public class TarjetaController {
             tarjetaDTOS = (List<TarjetaDTO>) tarjetaDAO.obtenerRecomendacionTarjetas(pasion, edad, sueldo);
             tarjetaDTOS.stream().map(tarjeta -> {
                 tarjeta.setPuerto(Integer.parseInt(environment.getProperty("local.server.port")));
+                //tarjeta.setPuerto(puerto);
                 return tarjeta;
             }).collect(Collectors.toList());
 
